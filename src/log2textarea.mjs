@@ -12,12 +12,12 @@ Init
 @param {boolean} - true or false to clean message obx
 @returns {boolean} - void
 @example 
-* var log = new Log2textarea("fooid","...start planning module");
+*  var log = new Log2textarea("fooid","...start planning module");
 */
 
   constructor(
     _id,
-    start_msg = "...start logging to Textarea with ID: " + _id + "\n",
+    start_msg = "xIt Logs! Logs assigned to Textarea with id: " + _id + "",
     clear = true,
   ) {
     this.log = document.querySelector("#" + _id);

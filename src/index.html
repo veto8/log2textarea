@@ -14,17 +14,18 @@
     <li><strong>Log2Textarea</strong></li>
   </ul>
   <ul>
-    <li><a href="index.html">UMD</a></li>    
-    <li><a href="cjs.html">CJS</a></li>
-    <li><a href="esm.html">ESM</a></li>        
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="index.html">ESM</a></li>                
+    <li><a href="iife_moe.html">Browser</a></li>
+    <li><a href="umd_mode.html">UMD</a></li>    
+    <li><a href="cjs_mode.html">CJS</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
   </header>
   <main class="container">
-    <h2>CJS Mode</h2>
-    <p>CJS is CommonJS, the older module format to organize JavaScript code into reusable modules.</p>
+    <h2>IIFE Mode</h2>
+    <p>CJS is Immediately Invoked Function Expression). Directly init the JavaScript class by its name. The iife format creates a self-executing function that runs immediately when the script is loaded. This allows you to directly expose variables and functions to the global scope without creating a separate module object.
     
     <h3>Click the Buttons to fire an event and log to the Textarea</h3>
     <button id="btn_1">Button 1</button> <button id="btn_2">Button 2</button> <button id="btn_3">Button 2</button><br><br>
@@ -32,7 +33,7 @@
     <textarea id="logger" rows="10" cols="30s" ></textarea>
     <small id="valid-helper">Logger Textarea</small>
   </main>
+  <script src="/dist/log2textarea.iife.js"></script>  
   <script src="/main.js"></script>
-
 </body>
 </html>

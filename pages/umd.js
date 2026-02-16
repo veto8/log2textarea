@@ -1,6 +1,4 @@
-//import { Log2textarea } from "./dist/log2textarea.umd.js";
-//var log = new Log2textarea("logger");
-
+var log = new Log2textarea("logger");
 window.onload = function () {
   const $button1 = document.querySelector("#btn_1");
   const $button2 = document.querySelector("#btn_2");

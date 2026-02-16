@@ -17,15 +17,14 @@
     <li><a href="index.html">ESM</a></li>                
     <li><a href="iife.html">Browser</a></li>
     <li><a class="contrast" href="umd.html">UMD</a></li>    
-    <li><a href="cjs.html">CJS</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
   </header>
   <main class="container">
-    <h2>IIFE Mode</h2>
-    <p>IIFE is Immediately Invoked Function Expression). Directly init the JavaScript class by its name. The iife format creates a self-executing function that runs immediately when the script is loaded. This allows you to directly expose variables and functions to the global scope without creating a separate module object.
+    <h2>UMD Mode</h2>
+    <p>UMD ist Universal Module Definition is a JavaScript module format designed to be compatible with multiple module systems. The goal of UMD is to create modules that can be used in various environments without modification, including: Browsers, AMD, CJS and ESM</p>
     
     <h3>Click the Buttons to fire an event and log to the Textarea</h3>
     <button id="btn_1">Button 1</button> <button id="btn_2">Button 2</button> <button id="btn_3">Button 2</button><br><br>
@@ -33,6 +32,7 @@
     <textarea id="logger" rows="10" cols="30s" ></textarea>
     <small id="valid-helper">Logger Textarea</small>
   </main>
+  <script src="/dist/log2textarea.umd.js"></script>    
   <script type="module" src="/umd.js"></script>
 </body>
 </html>

@@ -7,8 +7,6 @@ echo -e "3\t Clean Docker - Clean the docker containers and volumes "
 echo -e "4\t Clean All - Clean the docker containers and volumes and images "
 
 
-
-
 until [ "$task" = "0" ]; do 
 read task
     
@@ -17,7 +15,9 @@ if [ "$task" = "1" ]; then
     cd dockers
     docker-compose up -d
     echo "Go to:"
-    echo "http:/app.local"
+    echo "http:/127.0.0.1"
+    echo "or"
+    echo "http:/app.local"    
     cd ../
     chromium https://app.local &
 
@@ -39,9 +39,6 @@ elif [ "$task" = "4" ]; then
     docker volume rm $(docker volume ls -q --filter dangling=true)
     docker network prune
     docker rmi --force `docker images -aq` 
-
-
-
     
 else
     echo "Goodbye! - Exit"

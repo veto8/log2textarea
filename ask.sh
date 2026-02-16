@@ -5,6 +5,7 @@ echo -e "1\t Run Docker - Docker Test Enviroment "
 echo -e "2\t Stop Docker"
 echo -e "3\t Clean Docker - Clean the docker containers and volumes "
 echo -e "4\t Clean All - Clean the docker containers and volumes and images "
+echo -e "5\t Watch development "
 
 
 until [ "$task" = "0" ]; do 
@@ -39,6 +40,11 @@ elif [ "$task" = "4" ]; then
     docker volume rm $(docker volume ls -q --filter dangling=true)
     docker network prune
     docker rmi --force `docker images -aq` 
+
+elif [ "$task" = "5" ]; then
+    echo "...${task}"
+    watchify log2textarea.js  --s Log2textarea -o dist/log2textarea.js -v
+
     
 else
     echo "Goodbye! - Exit"

@@ -8,7 +8,7 @@ export default defineConfig({
       entry: "log2textarea.mjs", // Your entry point
       name: "Log2textarea", // The name of the global variable
       fileName: (format) => `log2textarea.${format}.js`, // Output file name
-      formats: ["iife"], // Output format (UMD for browser compatibility)
+      formats: ["iife", "umd", "cjs", "esm"], // Output format (UMD for browser compatibility)
     },
     outDir: "../pages/dist", // Output directory
     emptyOutDir: true, // also necessary

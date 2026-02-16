@@ -17,7 +17,7 @@ Init
 
   constructor(
     _id,
-    start_msg = "xIt Logs! Logs assigned to Textarea  id: " + _id + "",
+    start_msg = "It Logs! Logs assigned to Textarea  id: " + _id + "",
     clear = true,
   ) {
     this.log = document.querySelector("#" + _id);

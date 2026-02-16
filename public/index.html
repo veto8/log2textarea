@@ -20,17 +20,18 @@
 </nav>
   </header>
   <main class="container">
-
-    <h3>Click the Buttons to fire a event and log to the Textarea</h3>
+    <h2>CJS Mode</h2>
+    <p>CJS is CommonJS, the older module format to organize JavaScript code into reusable modules.</p>
+    
+    <h3>Click the Buttons to fire an event and log to the Textarea</h3>
     <button id="btn_1">Button 1</button> <button id="btn_2">Button 2</button> <button id="btn_3">Button 2</button><br><br>
     
-<textarea name="logger" rows="10" cols="30s" ></textarea>
-<small id="valid-helper">Logger Textarea</small>
+    <textarea id="logger" rows="10" cols="30s" ></textarea>
+    <small id="valid-helper">Logger Textarea</small>
+  </main>
+  <script type="module" src="/node_module/log2textarea.js"></script>    
+  <script type="module" src="/main.js"></script>
 
-
-    
-    </main>
-     <script type="module" src="/main.js"></script>
 
 </body>
 </html>

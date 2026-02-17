@@ -1,4 +1,4 @@
-# log2textarea
+# # ![email_gateway](pages//img/logo.png) log2textarea
 Simple logger to your textarea DOM
 
 Demo:

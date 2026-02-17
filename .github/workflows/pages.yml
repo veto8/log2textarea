@@ -1,4 +1,5 @@
-name: Pages
+name: Pages Upload 
+on:
   push:
     branches:
      - "*"

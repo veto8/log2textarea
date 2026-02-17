@@ -21,12 +21,12 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v2    
-      - name: Compile
-        run: |
-         sudo apt-get install npm -y
-         npm install 
-         npm run build
-         ls dist
+      #- name: Compile
+        #run: |
+         #sudo apt-get install npm -y
+         #npm install 
+         #npm run build
+         #ls dist
   
       - name: Setup Pages
         uses: actions/configure-pages@v5

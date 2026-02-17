@@ -8,3 +8,7 @@ dist/.tern-port
 .hgignore
 .gitignore
 dockers
+pages
+vite.config.js
+jsdoc.json
+ask.sh 
